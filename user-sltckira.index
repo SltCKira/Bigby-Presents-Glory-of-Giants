@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<index>
+	<info>
+		<name>Bigby Presents : Glory of Giants</name>
+		<update version="1.0.0">
+			<file name="user-sltckira.index" url="https://raw.githubusercontent.com/SltCKira/Bigby-Presents-Glory-of-Giants/master/user-sltckira.index" />
+		</update>
+	</info>
+	<files>
+		<file name="barbarian-pathofthegiant.xml" url="https://raw.githubusercontent.com/SltCKira/Bigby-Presents-Glory-of-Giants/master/user-sltckira/barbarian-pathofthegiant.xml" />
+	</files>
+</index>
