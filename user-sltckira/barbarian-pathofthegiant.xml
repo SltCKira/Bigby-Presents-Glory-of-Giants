@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<elements>	
+		<info>
+			<name>Barbarian : Path of the Giant</name>
+			<update version="1.0.0">
+				<file name="barbarian-pathofthegiant.xml" url="https://raw.githubusercontent.com/SltCKira/Bigby-Presents-Glory-of-Giants/master/user-sltckira/barbarian-pathofthegiant.xml" />
+			</update>
+		</info>
+	<element name="Path of the Giant" type="Archetype" source="Bigby Presents : Glory of Giants" id="ID_WOTC_BGOG_ARCHETYPE_BARBARIAN_PATH_OF_THE_GIANT">
+		<supports>Primal Path</supports>
+		<description>
+			<p>Barbarians who walk the Path of the Giant draw strength from the same primal forces as giants. As they rage, these barbarians surge with elemental power and grow in size, taking on forms that evoke the glory of giants. Some barbarians look like oversized versions of themselves, perhaps with a hint of elemental energy flaring in their eyes and around their weapons. Others transform more dramatically, taking on the appearance of an actual giant or a form similar to an Elemental, wreathed in fire, frost, or lightning.</p>
+			<div element="ID_WOTC_BGOG_ARCHETYPE_FEATURE_PATH_OF_THE_GIANT_GIANTS_POWER" />
+			<div element="ID_WOTC_BGOG_ARCHETYPE_FEATURE_PATH_OF_THE_GIANT_GIANTS_HAVOC" />
+			<div element="ID_WOTC_BGOG_ARCHETYPE_FEATURE_PATH_OF_THE_GIANT_ELEMENTAL_CLEAVER" />
+			<div element="ID_WOTC_BGOG_ARCHETYPE_FEATURE_PATH_OF_THE_GIANT_MIGHTY_IMPEL" />
+			<div element="ID_WOTC_BGOG_ARCHETYPE_FEATURE_PATH_OF_THE_GIANT_DEMIURGIC_COLOSSUS" />
+		</description>
+		<sheet display="false" />
+		<rules>
+			<grant type="Archetype Feature" id="ID_WOTC_BGOG_ARCHETYPE_FEATURE_PATH_OF_THE_GIANT_GIANTS_POWER" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_BGOG_ARCHETYPE_FEATURE_PATH_OF_THE_GIANT_GIANTS_HAVOC" level="3" />
+			<grant type="Archetype Feature" id="ID_WOTC_BGOG_ARCHETYPE_FEATURE_PATH_OF_THE_GIANT_ELEMENTAL_CLEAVER" level="6" />
+			<grant type="Archetype Feature" id="ID_WOTC_BGOG_ARCHETYPE_FEATURE_PATH_OF_THE_GIANT_MIGHTY_IMPEL" level="10" />
+			<grant type="Archetype Feature" id="ID_WOTC_BGOG_ARCHETYPE_FEATURE_PATH_OF_THE_GIANT_DEMIURGIC_COLOSSUS" level="14" />
+		</rules>
+	</element>
+	<element name="Giant's Power" type="Archetype Feature" source="Bigby Presents : Glory of Giants" id="ID_WOTC_BGOG_ARCHETYPE_FEATURE_PATH_OF_THE_GIANT_GIANTS_POWER">
+		<description>
+			<p><em>3rd-level Path of the Giant feature</em></p>
+			<p>When you choose this path, you learn to speak, read, and write Giant or one other language of your choice if you already know Giant. Additionally, you learn a cantrip of your choice: either druidcraft or thaumaturgy. Wisdom is your spellcasting ability for this spell.</p>
+		</description>
+		<sheet>
+			<description>When you choose this path, you learn to speak, read, and write Giant or one other language of your choice if you already know Giant. Additionally, you learn a cantrip of your choice: either druidcraft or thaumaturgy. Wisdom is your spellcasting ability for this spell.</description>
+		</sheet>
+	</element>
+	<rules>
+		<grant type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_DRUIDCRAFT" />
+		<supports>Druid</supports>
+		<description>
+		  <p>Whispering to the spirits of nature, you create one of the following effects within range:</p>
+		  <ul>
+			<li>You create a tiny, harmless sensory effect that predicts what the weather will be at your location for the next 24 hours. The effect might manifest as a golden orb for clear skies, a cloud for rain, falling snowflakes for snow, and so on. This effect persists for 1 round.</li>
+			<li>You instantly make a flower blossom, a seed pod open, or a leaf bud bloom.</li>
+			<li>You create an instantaneous, harmless sensory effect, such as falling leaves, a puff of wind, the sound of a small animal, or the faint odor of skunk. The effect must fit in a 5-foot cube.</li>
+			<li>You instantly light or snuff out a candle, a torch, or a small campfire.</li>
+		  </ul>
+		</description>
+		<sheet>
+			<description>Spellcasting ability: Wisdom.</description>
+		</sheet>
+		<setters>
+		  <set name="keywords"></set>
+		  <set name="level">0</set>
+		  <set name="school">Transmutation</set>
+		  <set name="time">1 action</set>
+		  <set name="duration">Instantaneous</set>
+		  <set name="range">30 feet</set>
+		  <set name="hasVerbalComponent">true</set>
+		  <set name="hasSomaticComponent">true</set>
+		  <set name="hasMaterialComponent">false</set>
+		  <set name="materialComponent" />
+		  <set name="isConcentration">false</set>
+		  <set name="isRitual">false</set>
+		</setters>
+		<grant type="Spell" source="Player’s Handbook" id="ID_PHB_SPELL_THAUMATURGY" />
+		<supports>Cleric</supports>
+    	<description>
+      	  <p>You manifest a minor wonder, a sign of supernatural power, within range. You create one of the following magical effects within range:</p>
+      	  <ul>
+        	<li>Your voice booms up to three times as loud as normal for 1 minute.</li>
+        	<li>You cause flames to flicker, brighten, dim, or change color for 1 minute.</li>
+        	<li>You cause harmless tremors in the ground for 1 minute.</li>
+        	<li>You create an instantaneous sound that originates from a point of your choice within range, such as a rumble of thunder, the cry of a raven, or ominous whispers.</li>
+        	<li>You instantaneously cause an unlocked door or window to fly open or slam shut.</li>
+        	<li>You alter the appearance of your eyes for 1 minute. If you cast this spell multiple times, you can have up to three of its 1-minute effects active at a time, and you can dismiss such an effect as an action.</li>
+      	  </ul>
+    	</description>
+		<sheet>
+			<description>Spellcasting ability: Wisdom.</description>
+		</sheet>
+		<setters>
+		<set name="keywords"></set>
+		<set name="level">0</set>
+		<set name="school">Transmutation</set>
+		<set name="time">1 action</set>
+		<set name="duration">Up to 1 minute</set>
+		<set name="range">30 feet</set>
+		<set name="hasVerbalComponent">true</set>
+		<set name="hasSomaticComponent">false</set>
+		<set name="hasMaterialComponent">false</set>
+		<set name="materialComponent" />
+		<set name="isConcentration">false</set>
+		<set name="isRitual">false</set>
+		</setters>
+	</rules>
+</elements>
